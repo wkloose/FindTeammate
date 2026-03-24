@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -5,7 +6,59 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
-@theme {
+/* @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+} */
+
+@theme {
+/* --- 1. PRIMARY BLUE PALETTE (Photo 1) --- */
+    --color-primary-0: #E8F6FF;
+    --color-primary-1: #BADCF2;
+    --color-primary-2: #8CC2E5;
+    --color-primary-3: #5DA8D8;
+    --color-primary-4: #2F8DCC;
+    --color-primary-5: #0174BE; /* Base */
+    --color-primary-6: #015D98;
+    --color-primary-7: #014672;
+    --color-primary-8: #002E4C;
+    --color-primary-9: #001726;
+    --color-primary-10: #000000;
+
+    /* --- 2. SECONDARY YELLOW PALETTE --- */
+    --color-secondary-0: #FFFFFF;
+    --color-secondary-1: #FFF3D7;
+    --color-secondary-2: #FFE7AF;
+    --color-secondary-3: #FFDC86;
+    --color-secondary-4: #FFD05E;
+    --color-secondary-5: #FFC436; /* Base */
+    --color-secondary-6: #CC9D2B;
+    --color-secondary-7: #9E7920;
+    --color-secondary-8: #6D5417;
+    --color-secondary-9: #3D2F0D;
+    --color-secondary-10: #0D0900;
+
+    /* --- 3. NEUTRAL GRAY PALETTE --- */
+    --color-neutral-background: #fff; /*background*/
+    --color-neutral-card: #F1F5F9; /* Abu Latar Belakang */
+
+    /* --- TEXT COLOR --- */
+    --color-text-black: #000;
+    --color-text-primary: #002E4C;
+
+    /* --- 4. SUCCESS GREEN PALETTE --- */
+    --color-success-5: #38C172;   /* Base Success Green */
+
+    /* --- 5. WARNING ORANGE PALETTE --- */
+    --color-warning-5: #FF9F43;   /* Base Warning Orange */
+
+    /* --- 6. DANGER RED PALETTE --- */
+    --color-danger-5: #E3342F;    /* Base Danger Red */
+
+    /*TYPOGRAPHY*/
+    --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+
+    /* size weight dll pakai default tailwind saja, udah persis sama design system figma.
+    */
+
 }

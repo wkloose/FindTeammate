@@ -7,5 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('layout/login');
+    return view('pages.login');
 })->name('login');

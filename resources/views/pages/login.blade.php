@@ -3,9 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    {{-- <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" /> --}}
+    @vite('resources/css/app.css')
   </head>
   <body>
     <div class="login-page-normal">
@@ -44,6 +42,7 @@
             </div>
             <div class="buttons">
               <button class="button"><div class="button-2">Log In</div></button>
+              <x-button>Hello World</x-button>
             </div>
           </div>
         </div>
