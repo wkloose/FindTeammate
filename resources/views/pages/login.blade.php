@@ -42,7 +42,7 @@
             </div>
             <div class="buttons">
               <button class="button"><div class="button-2">Log In</div></button>
-              <x-button>Hello World</x-button>
+              <x-button variant="primary">Hello World</x-button>
             </div>
           </div>
         </div>

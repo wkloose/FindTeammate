@@ -1,26 +1,40 @@
 @props([
-    'type' => 'button',
+    'variant' => 'primary',
+    'type'    => 'button',
     'disabled' => false
 ])
 
+@php
+    $variants = [
+        'primary'   => 'bg-primary-5 text-white hover:bg-primary-3',
+        'secondary' => 'bg-white text-primary-8 hover:bg-primary-8 hover:text-white',
+        'danger'    => 'bg-red-500 text-white hover:bg-red-400',
+        'sucess'    => 'bg-green-500 text-white hover:bg-green-400'
+    ];
+
+    $disabledStyle = $disabled 
+        ? 'opacity-50 cursor-not-allowed grayscale pointer-events-none' 
+        : 'cursor-pointer';
+
+    $selectedVariant = $variants[$variant] ?? $variants['primary'];
+@endphp
+
 <button 
     type="{{ $type }}"
-    @if($disabled) disabled @endif
+    @disabled($disabled)
     {{ $attributes->merge([
-        'class' => '
+        'class' => "
             inline-flex items-center justify-center gap-2
-            px-6 py-3 rounded-full min-w-[120px]
+            px-6 h-[48px] min-w-[140px] rounded-full
             
-            font-sans text-base font-bold text-white
+            font-sans text-base font-bold leading-none
             
-            bg-primary-5 
-            
-            hover:bg-primary-3
-            
-            active:bg-primary-5
+            transition-all duration-200 ease-in-out cursor-pointer
                         
-            transition-all duration-200 ease-in-out
-        '
+            disabled:opacity-50 disabled:cursor-not-allowed            
+            {$selectedVariant}
+            {$disabledStyle}
+        "
     ]) }}
 >
     {{ $slot }}

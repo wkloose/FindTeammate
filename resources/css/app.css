@@ -6,11 +6,6 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
-/* @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-} */
-
 @theme {
 /* --- 1. PRIMARY BLUE PALETTE (Photo 1) --- */
     --color-primary-0: #E8F6FF;
@@ -40,7 +35,19 @@
 
     /* --- 3. NEUTRAL GRAY PALETTE --- */
     --color-neutral-background: #fff; /*background*/
-    --color-neutral-card: #F1F5F9; /* Abu Latar Belakang */
+
+    /* SLATE */
+    --color-slate-50: #f8fafc;
+    --color-slate-100: #f1f5f9; /* card */
+    --color-slate-200: #e2e8f0; /* outline textfied*/
+    --color-slate-300: #cad5e2;
+    --color-slate-400: #90a1b9;
+    --color-slate-500: #62748e;
+    --color-slate-600: #45556c;
+    --color-slate-700: #314158;
+    --color-slate-800: #1d293d;
+    --color-slate-900: #0f172b;
+    --color-slate-950: #020618;
 
     /* --- TEXT COLOR --- */
     --color-text-black: #000;
